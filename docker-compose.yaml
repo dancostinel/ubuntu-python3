@@ -1,8 +1,8 @@
 services:
     ubuntu1-service:
         image: ubuntu
-        container_name: python
+        container_name: python1-container
         volumes:
             - ./app:/var/www/app
-        working_dir: /var/www/python
+        working_dir: /var/www/app
         command: ["/bin/bash", "-c", "apt-get update && apt-get install -y python3 && sleep infinity"]
