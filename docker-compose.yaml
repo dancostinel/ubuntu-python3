@@ -1,5 +1,5 @@
 services:
-    ubuntu1-service:
+    python1-service:
         image: ubuntu
         container_name: python1-container
         volumes:
@@ -7,3 +7,4 @@ services:
         working_dir: /var/www/app
         tty: true
         # command: ["/bin/bash", "-c", "apt-get update && apt-get install -y python3 && sleep infinity"]
+        # command: ["/bin/bash", "-c", "apt-get update && apt-get install -y python3.12-full && apt-get install vim -y --no-install-recommends"]
