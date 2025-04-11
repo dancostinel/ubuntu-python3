@@ -5,4 +5,5 @@ services:
         volumes:
             - ./app:/var/www/app
         working_dir: /var/www/app
-        command: ["/bin/bash", "-c", "apt-get update && apt-get install -y python3 && sleep infinity"]
+        tty: true
+        # command: ["/bin/bash", "-c", "apt-get update && apt-get install -y python3 && sleep infinity"]
